@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  /*background-image: linear-gradient(135deg, #FAB2FF 10%, rgb(237, 228, 228) 90%);*/
+  background-color: ;
+  color: black;
+  height: 100vh;
+}
+
+/*.navbar {
+  display: flex;
+  flex-direction: row;
+  height: 20vh;
+  width: 100%;
+  font-size: 1.6rem;
+  background-image: linear-gradient(135deg, #ff6c6c 30%, #1904E5 100%);
+  background-color:#623DEE;  
+  color: white;
+}*/
+.navbar {
+  display: flex;
+  flex-direction: row;
+  height: 20vh;
+  width: 100%;
+  font-size: 1.6rem;
+  background-image: linear-gradient(135deg, #ff6c6c 30%, #1904E5 100%);
+  background-color: #623DEE; /* Updated color to #623DEE */
+  color: white;
+}
+
+#navbarNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 10%;
+}
+
+.navbar-nav {
+  gap: 5rem;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.display-date {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-left: 50px;
+  color: black;
+}
+
+.display-time {
+  display: flex;
+  font-size: 2rem;
+  margin-left: 50px;
+  font-weight: bold;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: ease-in-out 0.1s;
+  transition-property: background, box-shadow, color;
+  -webkit-box-reflect: below 2px linear-gradient(transparent, rgba(255, 255, 255, 0.05));
+}
+
+.display-time:hover {
+  background: #f9f9f8;
+  color: white;
+  cursor: pointer;
+}
+
+.arrows {
+  width: 60px;
+  height: 30px;
+}
+
+.fromto {
+  display: flex; /* Added display property */
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+input[type="text"] {
+  background-color: rgb(252, 249, 249);
+  color: black;
+  border-radius: 5rem;
+  width: 25%;
+  height: 3rem;
+  margin: 10px auto;
+}
+
+::placeholder {
+  margin-left: 10px;
+  color: black;
+  text-align: center;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* CSS for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect on rows */
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Responsive table */
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    border-bottom: 2px solid #ddd;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    text-align: right;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+}
+
+#total-amount {
+  position: absolute;
+  right: 350px; /* Adjust this value to move the input field towards the left */
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid green;
+  background-color: darkorchid;
+  border-radius: 5px;
+  font-size: 16px;
+}
